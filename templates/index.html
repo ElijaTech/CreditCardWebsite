@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Credit Card Validator</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}"
+        />
+    </head>
+    <body>
+        <h1>Credit Card Validator</h1>
+        <h2>Enter your credit card number below to check if it is valid</h2>
+        <form action="/check_card" method="POST">
+            <input
+                type="text"
+                name="cardNumber"
+                placeholder="Enter Your Card Number"
+                size="20"
+                required
+            />
+            <button type="submit" class="myButton">Check</button>
+        </form>
+    </body>
+</html>
